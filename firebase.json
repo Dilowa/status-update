@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "dist/status-update",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}

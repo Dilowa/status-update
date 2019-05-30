@@ -1,0 +1,18 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Status Update
+    </h1>
+</div>
+
+
+<input class="form-control" type="text" [(ngModel)]="status.name">
+<input class="form-control" type="text" [(ngModel)]="status.status">
+
+<button (click)="save()">Save</button>
+
+<h2>Statuses</h2>
+
+<div *ngFor="let status of statuses | async">
+  {{status.name}} | {{status.status}}
+</div>
